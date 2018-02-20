@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         nombre= eNombre.getText().toString();
         eCorreo.setText(nombre);
     }
-
+    //metodo para el radiobutton
     public void onRadioButtonClicked(View view) {
         int id = view.getId();
 
