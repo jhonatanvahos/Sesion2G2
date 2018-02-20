@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sesion2G2</string>
+    <string name="titulo">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">correo</string>
+    <string name="guardar">Guardar</string>
+    <string name="masculino">masculino</string>
+    <string name="femenino">femenino</string>
+    <string name="pasatiempos">Pasatiempo</string>
+    <string name="nadar">nadar</string>
+    <string name="cine">Cine</string>
+    <string name="correr">Correr</string>
+
+</resources>
