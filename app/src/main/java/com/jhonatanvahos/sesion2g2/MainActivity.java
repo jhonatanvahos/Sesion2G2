@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
     }
-
+    //metodo para el boton
     public void onButtonClicked(View view) {
         nombre= eNombre.getText().toString();
         eCorreo.setText(nombre);
