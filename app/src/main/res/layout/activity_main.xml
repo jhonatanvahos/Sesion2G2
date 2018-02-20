@@ -10,15 +10,18 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text= "@string/titulo"
         android:textColor ="@color/blue"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:gravity="center_horizontal"/>
+        android:gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
         android:layout_marginTop="20dp">
 
         <TextView
@@ -33,36 +36,35 @@
             android:layout_height="wrap_content"
             android:id="@+id/eNombre"/>
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:hint="@string/correo"
         android:inputType="textEmailAddress"
         android:id="@+id/eCorreo"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/guardar"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:background="@color/yellow"
-        android:textSize="20sp"
-        android:id="@+id/bGuardar"
-        android:onClick="onButtonClicked"/>
+    </LinearLayout>
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
         <RadioButton android:id="@+id/rMasculino"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/masculino"
             android:onClick="onRadioButtonClicked"/>
         <RadioButton android:id="@+id/rFemenino"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/femenino"
             android:onClick="onRadioButtonClicked"/>
@@ -70,26 +72,49 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/pasatiempos"
         android:textSize="25sp"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nadar"
-        android:id="@+id/cNadar"
-        android:onClick="onCheckBoxClicked"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cine"
-        android:id="@+id/cCine"
-        android:onClick="onCheckBoxClicked"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/correr"
-        android:id="@+id/cCorrer"
-        android:onClick="onCheckBoxClicked"/>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/nadar"
+            android:id="@+id/cNadar"
+            android:onClick="onCheckBoxClicked"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cine"
+            android:id="@+id/cCine"
+            android:onClick="onCheckBoxClicked"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/correr"
+            android:id="@+id/cCorrer"
+            android:onClick="onCheckBoxClicked"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@color/yellow"
+            android:textSize="20sp"
+            android:id="@+id/bGuardar"
+            android:onClick="onButtonClicked"/>
+    </LinearLayout>
 </LinearLayout>

@@ -2,11 +2,13 @@ package com.jhonatanvahos.sesion2g2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.QuickContactBadge;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
     //metodo para el boton
     public void onButtonClicked(View view) {
         nombre= eNombre.getText().toString();
-        eCorreo.setText(nombre);
+        //hacer pruebas para saber si funciona la toma de datos
+        Log.d("nombre digitad",nombre);
+        Toast.makeText(this, "Debe llenar todos los datos", Toast.LENGTH_LONG).show();
+        //eCorreo.setText(nombre);
     }
     //metodo para el radiobutton
     public void onRadioButtonClicked(View view) {
