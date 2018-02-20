@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             eCorreo.setText("Femenino");
         }
     }
-
+    // metodo para CheckBox
     public void onCheckBoxClicked(View view) {
         int id = view.getId();
 
